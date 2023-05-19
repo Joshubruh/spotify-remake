@@ -1,7 +1,6 @@
 var today = new Date();
 var time = today.getHours();
-
-time = 18
+let trackName = document.getElementById('track-name');'
 
 if (time < 12) {
     document.getElementById("greetingcard").innerHTML = "Good Morning"
@@ -10,5 +9,3 @@ if (time < 12) {
 } else {
     document.getElementById("greetingcard").innerHTML = "Good Evening"
 }
-
-console.log(time);
