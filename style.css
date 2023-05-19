@@ -1,10 +1,11 @@
-
 :root {
     --container-bg: #121212;
     --text-color: #a7a7a7
 }
 
 html {
+    overflow-y: hidden;
+    overflow-x: hidden;
     background-color: black;
 }
 
@@ -14,6 +15,7 @@ h2 {
 
 /* Buttons */
 .home {
+    font-family: arial;
     margin-left: 10px;
     vertical-align: middle;
     display: inline-block;
@@ -25,6 +27,7 @@ h2 {
 }
 
 .search {
+    font-family: arial;
     margin-left: 10px;
     vertical-align: middle;
     display: inline-block;
@@ -36,6 +39,7 @@ h2 {
 }
 
 .library {
+    font-family: arial;
     margin-left: 10px;
     vertical-align: middle;
     display: inline-block;
@@ -43,6 +47,7 @@ h2 {
 
 .library:hover {
     transition: 0.2s;
+    filter: brightness(150%);
     
 }
 
@@ -88,17 +93,29 @@ h2 {
     bottom: 10px;
 }
 
+/* Bottom Bar */
+.bottom-bar-container {
+    height: fit-content;
+    padding-right: 2560px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+
+}
+
+.bottom-bar {
+
+}
+
 /* Background */
 .bg-container {
-    border-radius: 10px;;
-    background: #20a357;
-    background: linear-gradient(180deg,  rgba(52, 181, 120, 0.4) 0%,#000000 30%,#000000 67%);  
+    background: linear-gradient(180deg,  rgba(52, 181, 120, 0.4) 0%,#1212 30%,#121212 67%);  
     position: fixed;
     top: 10px;
     left: 40vh;
-    padding-right: vh;
     padding-bottom: 89vh;
-    padding-right: 138vh;
+    border-radius: 10px;
+    margin-right: 20px;
 }
 .greetcard-container {
     font-family: Gotham;
@@ -119,9 +136,7 @@ h2 {
     height: 80px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
-    filter: blur();
-    padding-right: 40vh;
-    margin-right: 10px;
+    padding-right: 41.5vh;
     margin-top: 5px;
 }
 
@@ -132,10 +147,60 @@ h2 {
 
 .feed h2 {
    position: relative;
-   bottom: 160px;
+   bottom: 157px;
    left: 110px;
-   margin-bottom: 65px;
+   margin-bottom: 67px;
    font-weight: bolder;
    color: white;
    font-family: gotham 
+}
+
+.fa {
+    position: relative;
+    font-size: 40px;
+    color: var(--text-color);
+}
+
+.fa-step-backward {
+    bottom: 25px;
+    left: 87vh;
+}
+
+.fa-step-forward {
+    left: 96.5vh;
+    bottom: 25px;
+}
+
+.fa-pause-circle {
+    font-size: 55px;
+    left: 87.75vh;
+    bottom: 20px;
+}
+
+.playback-bar {
+    width: 650px;
+    height: 15px;
+    position: relative;
+    bottom: 10px;
+    left: 80vh;
+    border-radius: 10px;
+    background-color: var(--text-color);
+}
+
+.progress-elapsed {
+    width: 650px;
+    width: 10%;
+    height: 15px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+#currently-playing {
+    border-radius: 30px;
+    position: relative;
+    height: 100px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
 }
