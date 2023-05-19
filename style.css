@@ -95,7 +95,7 @@ h2 {
 
 /* Bottom Bar */
 .bottom-bar-container {
-    height: fit-content;
+    height: 200px;
     padding-right: 2560px;
     position: absolute;
     bottom: 0;
@@ -162,45 +162,55 @@ h2 {
 }
 
 .fa-step-backward {
-    bottom: 25px;
+    bottom: 50px;
     left: 87vh;
 }
 
 .fa-step-forward {
     left: 96.5vh;
-    bottom: 25px;
+    bottom: 50px;
 }
 
 .fa-pause-circle {
     font-size: 55px;
     left: 87.75vh;
-    bottom: 20px;
+    bottom: 45px;
 }
 
 .playback-bar {
     width: 650px;
     height: 15px;
     position: relative;
-    bottom: 10px;
-    left: 80vh;
+    bottom: 110px;
+    left: 81vh;
     border-radius: 10px;
-    background-color: var(--text-color);
+    background-color: green;
 }
 
 .progress-elapsed {
     width: 650px;
-    width: 10%;
+    width: 100%;
     height: 15px;
     border-radius: 10px;
     background-color: green;
 }
 
-#currently-playing {
+.track-art {
     border-radius: 30px;
     position: relative;
-    height: 100px;
+    top: 17.5px;
+    height: 120px;
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 25px;
     padding-bottom: 0px;
+}
+
+#track-name {
+    font-size: 28px;
+    position: relative;
+    color: var(--text-color);
+    font-family: sans-serif;
+    left: 170px;
+    bottom: 100px;
 }
