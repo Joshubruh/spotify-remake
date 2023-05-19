@@ -1,3 +1,4 @@
+
 :root {
     --container-bg: #121212;
     --text-color: #a7a7a7
@@ -32,6 +33,17 @@ h2 {
 .search:hover{
     transition: 0.2s;
     filter: brightness(150%);
+}
+
+.library {
+    margin-left: 10px;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.library:hover {
+    transition: 0.2s;
+    
 }
 
 /* Sidebar */
@@ -89,7 +101,7 @@ h2 {
     padding-right: 138vh;
 }
 .greetcard-container {
-    font-family: system-ui;
+    font-family: Gotham;
     color: white;
     position: relative;
     top: 3vh;
@@ -104,15 +116,26 @@ h2 {
 }
 
 .feed img {
-    margin-top: 20px;
+    height: 80px;
     border-radius: 10px;
     background: rgba(255, 255, 255, 0.2);
     filter: blur();
     padding-right: 40vh;
-    margin-right: 20px;
+    margin-right: 10px;
+    margin-top: 5px;
 }
 
 .feed img:hover {
     background: rgba(255, 255, 255, 0.4);
     transition: 0.4s;
+}
+
+.feed h2 {
+   position: relative;
+   bottom: 160px;
+   left: 110px;
+   margin-bottom: 65px;
+   font-weight: bolder;
+   color: white;
+   font-family: gotham 
 }
